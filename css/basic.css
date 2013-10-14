@@ -45,6 +45,7 @@ body{
 	width:180px;
 	float:left;
 	margin:0px;
+	position:relative;
 	background:white;
 	text-decoration:none;
 	z-index:1;
@@ -98,9 +99,6 @@ body{
 	-webkit-box-shadow: 10px 5px 30px 20px rgba(0, 0, 0, .1);
 	   -moz-box-shadow: 10px 5px 30px 20px rgba(0, 0, 0, .1);
 	        box-shadow: 10px 5px 30px 20px rgba(0, 0, 0, .1);
-
-	-webkit-animation-duration: 0.6s;
-	-webkit-animation-name: zfix;		
 }
 
 
@@ -108,28 +106,4 @@ body{
 	content: attr(title);
 	
 }
-
-
-
-@keyframes zfix  {
-	from {z-index: 1;}
-	to {z-index: 1000;-moz-transform: scale(2);}
-}
-
-@-moz-keyframes zfix  {
-	from {z-index: 1;}
-	to {z-index: 1000;}
-}
-
-/* z-index fix in chrome */
-@-webkit-keyframes zfix  {
-	from {z-index: 1;}
-	to {z-index: 1000;}
-}
-
-
-
-
-
-
 
